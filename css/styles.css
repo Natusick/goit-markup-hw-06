@@ -674,7 +674,7 @@ flex-basis: calc(100% / 3);
     margin-left: 12px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px solid rgba(0, 0, 0, 0.15);
-    
+    border: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -799,8 +799,15 @@ flex-basis: calc(100% / 3);
     background: transparent;
     color: #757575;
     resize: none;
+    transition: 250ms var(--optimal-transition);
     
 }
+
+.text-input:focus,
+.text-input:hover{
+    border-color: var(--accent-color);
+}
+
 .input-label{
     display: block;
     position: relative;
@@ -846,6 +853,8 @@ flex-basis: calc(100% / 3);
     align-items: center;
     justify-content: center;
 }
+
+
 
 .check-icon{
     margin: 0 auto;
